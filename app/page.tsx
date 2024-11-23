@@ -4,6 +4,7 @@ import { SkillsSection } from "./sections/skills.section";
 import { ContactSection } from "./sections/contact.section";
 import { FooterSection } from "./sections/footer.section";
 import { TrackSection } from "./sections/track.section";
+import { LocationSection } from "./sections/location.section";
 export default function Home() {
   return (
     <>
@@ -12,6 +13,7 @@ export default function Home() {
       <SkillsSection />
       <ServicesSection />
       <ContactSection />
+      <LocationSection />
       <FooterSection />
     </>
   );
