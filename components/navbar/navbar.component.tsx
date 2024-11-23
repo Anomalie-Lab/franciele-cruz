@@ -32,13 +32,13 @@ export function Navbar() {
   return (
     <aside className="fixed top-1/2 -translate-y-1/2 right-24 flex flex-col gap-16 mix-blend-difference text-white">
       <menu className="flex flex-col gap-10 items-end">
-        <li className={`font-semibold text-lg cta hover-effect ${sectionVisible === "trajectory" ? "text-accentPrimary active" : ""}`}>
-          <Link href="#trajectory" className="border-none bg-none cursor-pointer">
+        <li className={`font-semibold text-lg cta hover-effect ${sectionVisible === "track" ? "text-accentPrimary active" : ""}`}>
+          <Link href="#track" className="border-none bg-none cursor-pointer">
             <span className="hover-underline-animation relative pb-2 pr-4 tracking-widest">Trajetória</span>
           </Link>
         </li>
-        <li className={`font-semibold text-lg cta hover-effect ${sectionVisible === "areas-of-activity" ? "text-accentPrimary active" : ""}`}>
-          <Link href="#areas-of-activity" className="border-none bg-none cursor-pointer">
+        <li className={`font-semibold text-lg cta hover-effect ${sectionVisible === "skills" ? "text-accentPrimary active" : ""}`}>
+          <Link href="#skills" className="border-none bg-none cursor-pointer">
             <span className="hover-underline-animation relative pb-2 pr-4 tracking-widest">Áreas de atuação</span>
           </Link>
         </li>

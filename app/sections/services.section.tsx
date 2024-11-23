@@ -5,7 +5,7 @@ import { TitleSection } from "./title.section";
 
 export function ServicesSection() {
   return (
-    <div className="bg-white py-32 section pl-52" data-section="services">
+    <section className="bg-white py-32 section pl-52" data-section="services">
       <TitleSection number="01" title="Servicos" bg="bg-black" color="text-black" />
       <div className="">
         <div>
@@ -16,6 +16,6 @@ export function ServicesSection() {
           <CarouselDefaultComponent />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

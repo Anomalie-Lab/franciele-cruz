@@ -27,7 +27,7 @@ export function TrackSection() {
   };
 
   return (
-    <div className="h-screen">
+    <section className="h-screen bg-white text-black section" data-section="track">
       <div className="mt-24 ml-52">
         <div className="flex gap-8">
           <Image className="dark:invert" src={imageCarousel} alt="Next.js logo" width={454.1} height={460.06} priority />
@@ -50,6 +50,6 @@ export function TrackSection() {
           <p className="font-base w-1/2	mt-8 text-xl text-justify ">Meu compromisso é manter os clientes informados de forma clara sobre o andamento dos processos, sempre buscando entender o lado humano por trás do conflito. Acredito que o Direito deve ser acolhedor, sensível e focado na resolução dos problemas de forma humanizada, e não apenas em lucro.</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
