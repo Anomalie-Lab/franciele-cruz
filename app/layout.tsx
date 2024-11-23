@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/navbar/navbar.component";
 import { Providers } from "./providers/providers";
-
+import "@splidejs/react-splide/css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
