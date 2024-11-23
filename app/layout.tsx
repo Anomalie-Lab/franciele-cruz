@@ -26,8 +26,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <body className={`${inter.className} antialiased`}>
           {children}
           <Navbar />
-          <LocationSection />
-          <FooterSection />
         </body>
       </Providers>
     </html>

@@ -1,6 +1,6 @@
 function Areas() {
   return (
-    <main className="bg-[url('/still-life-with-scales-justice-2.png')] bg-cover bg-center p-16 flex flex-col gap-10">
+    <main className="bg-[url('/still-life-with-scales-justice-2.png')] bg-cover bg-center p-16 flex flex-col gap-10 absolute w-full z-40">
       <div className="flex gap-5">
         <div className="flex w-full justify-between">
           <div className="flex gap-5">
