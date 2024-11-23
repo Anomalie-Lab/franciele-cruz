@@ -60,7 +60,7 @@ export function SkillsSection() {
                 <button className="splide__arrow--next w-3 h-3 bg-white/50 rounded-full"></button>
               </div>
               <div className="font-semibold text-lg cta hover-effect">
-                <Link href="#contact" className="border-none bg-none cursor-pointer">
+                <Link href="/areas" className="border-none bg-none cursor-pointer">
                   <span className="hover-underline-animation relative pb-2 tracking-widest flex gap-3 items-center font-normal text-base">
                     Veja Todos <IoIosArrowForward />
                   </span>
