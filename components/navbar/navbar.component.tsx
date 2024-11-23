@@ -52,11 +52,6 @@ export function Navbar() {
             <span className="hover-underline-animation relative pb-2 tracking-widest">Contato</span>
           </Link>
         </li>
-        <li className={`font-semibold text-lg cta hover-effect ${sectionVisible === "location" ? "active" : ""}`}>
-          <Link href="#location" className="border-none bg-none cursor-pointer">
-            <span className="hover-underline-animation relative pb-2 tracking-widest">Localização</span>
-          </Link>
-        </li>
       </menu>
       <ul className="flex gap-6 font-black text-xl">
         <li>

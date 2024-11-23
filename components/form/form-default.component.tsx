@@ -33,7 +33,7 @@ export const FormDefaultComponent=()=> {
                 <textarea
                     id="mensagem"
                     className="w-full border border-white p-3 bg-transparent placeholder-white text-sm"
-                    rows="4"
+                    rows={4}
                     placeholder="Adicione sua mensagem aqui."
                 />
             </div>
