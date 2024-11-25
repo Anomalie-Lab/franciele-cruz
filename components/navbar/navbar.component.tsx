@@ -30,7 +30,7 @@ export function Navbar() {
   }, [setSectionVisible]);
 
   return (
-    <aside className="fixed z-20 top-1/2 -translate-y-1/2 right-24 flex flex-col gap-16 mix-blend-difference text-white">
+    <aside className="fixed z-20 top-1/2 -translate-y-1/2 right-24 flex flex-col gap-16 mix-blend-difference text-white max-[1200px]:right-5 max-[1024px]:hidden">
       <menu className="flex flex-col gap-10 items-end">
         <li className={`font-semibold text-lg cta hover-effect ${sectionVisible === "track" ? "active" : ""}`}>
           <Link href="#track" className="border-none bg-none cursor-pointer">
