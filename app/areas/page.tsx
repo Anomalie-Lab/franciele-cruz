@@ -1,15 +1,18 @@
+import { Navbar } from "@/components/navbar/navbar.component";
+
 function Areas() {
   return (
-    <main className="bg-[url('/still-life-with-scales-justice-2.png')] bg-cover bg-center p-16 flex flex-col gap-10 absolute w-full z-40">
-      <div className="flex gap-5">
-        <div className="flex w-full justify-between">
+    <main className="bg-[url('/still-life-with-scales-justice-2.png')] bg-cover bg-center p-16 flex flex-col gap-10 absolute w-full z-40 max-[1350px]:pr-64 max-[1350px]:pl-4 max-[1024px]:pr-4">
+      <Navbar />
+      <div className="flex gap-5 max-lg:flex-col-reverse items-center">
+        <div className="flex w-full justify-between max-lg:mt-16">
           <div className="flex gap-5">
-            <div className="text-3xl font-bold w-fit h-fit flex items-center gap-5">
+            <div className="text-3xl font-bold w-fit h-fit flex items-center gap-5 max-lg:hidden">
               02 <span className={`min-w-8 h-0.5 rounded-md bg-white`}></span>
             </div>
             <div className="flex flex-col gap-5">
               <h1 className="font-black text-4xl text-accentSecondary">Áreas de atuação</h1>
-              <p className="max-w-[430px] opacity-80 font-bold">Soluções Jurídicas Personalizadas para Empresas e Indivíduos: Proteção, Estratégia e Eficiência em Cada Área do Direito</p>
+              <p className="max-w-[430px] max-lg:max-w-full text-justify opacity-80 font-bold">Soluções Jurídicas Personalizadas para Empresas e Indivíduos: Proteção, Estratégia e Eficiência em Cada Área do Direito</p>
             </div>
           </div>
         </div>
@@ -21,9 +24,9 @@ function Areas() {
         </aside>
       </div>
       <div className="max-w-[1000px] text-justify flex flex-col gap-5 mt-14">
-        <div className="font-extrabold text-xl">“Como advogado, acredito que cada cliente merece uma abordagem única e personalizada. Minha missão é oferecer soluções jurídicas que protejam seus direitos, minimizem riscos e resolvam conflitos da maneira mais eficiente possível. Ao longo da minha carreira, tenho trabalhado com um foco claro em áreas específicas do direito, sempre com a intenção de proporcionar a melhor orientação e defesa para empresas e pessoas”.</div>
-        <div className="text-lg">Aqui estão as áreas em que posso oferecer todo o suporte jurídico necessário, com foco em soluções personalizadas e eficientes para cada situação:</div>
-        <ul className="flex flex-col gap-5 pb-32 text-lg">
+        <div className="font-extrabold text-xl max-lg:text-base">“Como advogado, acredito que cada cliente merece uma abordagem única e personalizada. Minha missão é oferecer soluções jurídicas que protejam seus direitos, minimizem riscos e resolvam conflitos da maneira mais eficiente possível. Ao longo da minha carreira, tenho trabalhado com um foco claro em áreas específicas do direito, sempre com a intenção de proporcionar a melhor orientação e defesa para empresas e pessoas”.</div>
+        <div className="text-lg max-lg:text-sm">Aqui estão as áreas em que posso oferecer todo o suporte jurídico necessário, com foco em soluções personalizadas e eficientes para cada situação:</div>
+        <ul className="flex flex-col gap-5 pb-32 text-lg max-lg:text-base">
           <li>
             <h2 className="font-extrabold">Direito Trabalhista</h2>
             <p>Direito Trabalhista Ofereço consultoria preventiva para empresas, elaborando contratos e estratégias para reduzir passivos trabalhistas, evitando litígios. Também defendo trabalhadores em questões como demissões sem justa causa, indenizações e salários atrasados, sempre buscando a melhor solução com ética e transparência.</p>
