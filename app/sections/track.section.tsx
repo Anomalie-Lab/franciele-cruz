@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { TitleSection } from "./title.section";
 
 export function TrackSection() {
@@ -15,8 +15,7 @@ export function TrackSection() {
     if (btnNum === 1) {
       setBtnCarouselColor1("bg-black");
       setBtnCarouselColor2("bg-gray-400");
-      setBtnC
-      arouselColor3("bg-gray-400");
+      setBtnCarouselColor3("bg-gray-400");
     } else if (btnNum === 2) {
       setBtnCarouselColor1("bg-gray-400");
       setBtnCarouselColor2("bg-black");
