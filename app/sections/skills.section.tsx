@@ -6,12 +6,15 @@ import { FaBuildingShield, FaPeopleRoof } from "react-icons/fa6";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import Link from "next/link";
 import { IoIosArrowForward } from "react-icons/io";
-
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 export function SkillsSection() {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
   return (
     <section className="bg-[url('/still-life-with-scales-justice.png')] py-32 bg-cover bg-top section pl-52 text-white max-[1450px]:pl-4 px-4" data-section="skills">
       <TitleSection id="skills" number="02" title="Especialidades" bg="bg-white" color="text-white" />
-      <div>
+      <motion.div ref={ref} initial={{ opacity: 0, x: 150 }} animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 150 }} transition={{ duration: 0.5, delay: 0.5 }}>
         <div>
           <h1 className="text-6xl font-black w-2/5 text-left max-lg:w-fit max-md:text-4xl">Áreas de atuação.</h1>
           <p className="mt-8 w-2/4 font-black opacity-50 max-lg:w-fit max-md:text-sm">Como advogada, ofereço soluções jurídicas personalizadas, focadas em resolver os desafios legais de meus clientes com agilidade e eficiência.</p>
@@ -71,7 +74,7 @@ export function SkillsSection() {
         <div>
           <div></div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
