@@ -6,11 +6,14 @@ import { FaBuildingShield, FaPeopleRoof } from "react-icons/fa6";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import Link from "next/link";
 import { IoIosArrowForward } from "react-icons/io";
-
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 export function SkillsSection() {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
   return (
     <section className="bg-[url('/still-life-with-scales-justice.png')] py-32 bg-cover bg-top section pl-52 text-white max-[1450px]:pl-4 px-4" data-section="skills">
-      <TitleSection id="skills" number="02" title="Áreas de atuação" bg="bg-white" color="text-white" />
+      <TitleSection id="skills" number="02" title="Especialidades" bg="bg-white" color="text-white" />
       <div>
         <div>
           <h1 className="text-6xl font-black w-2/5 text-left max-lg:w-fit max-md:text-4xl">Áreas de atuação.</h1>
@@ -71,7 +74,7 @@ export function SkillsSection() {
         <div>
           <div></div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
