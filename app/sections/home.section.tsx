@@ -23,7 +23,7 @@ export function HomeSection() {
           <h1 className="text-[160px] max-[1024px]:text-8xl max-[500px]:text-7xl text-accentSecondary font-bold font-playfair flex flex-col items-end">
             <span>Franciele</span> <span className="-mt-24 max-[1024px]:mt-0">Cruz</span>
           </h1>
-          <h2 className="text-7xl max-[1024px]:text-5xl max-[500px]:text-4xl font-sacramento ">Advogada</h2>
+          <h2 className="text-7xl max-[1024px]:text-5xl max-[500px]:text-4xl font-sacramento text-white">Advogada</h2>
         </div>
       </div>
     </main>
