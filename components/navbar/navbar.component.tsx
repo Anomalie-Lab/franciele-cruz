@@ -56,19 +56,23 @@ export function Navbar() {
           </Link>
         </li>
       </menu>
-      <ul className="flex gap-6 font-light text-xl">
-        <li>
+      <ul className="flex gap-8 font-light text-xl">
+        <Link href="/#track" className={`flex items-center gap-3 ${sectionVisible === "contact" && "hidden"}`}>
           <h4>01</h4>
-          <span></span>
-        </li>
-        <li>
-          <h4>01</h4>
-          <span></span>
-        </li>
-        <li>
-          <h4>01</h4>
-          <span></span>
-        </li>
+          <span className={` ease-linear duration-300 transition-all block min-h-0.5 rounded-md bg-white ${sectionVisible === "track" ? "min-w-8" : "min-w-0"}`}></span>
+        </Link>
+        <Link href="/#skills" className="flex items-center gap-3">
+          <h4>02</h4>
+          <span className={` ease-linear duration-300 transition-all block min-h-0.5 rounded-md bg-white ${sectionVisible === "skills" ? "min-w-8" : "min-w-0"}`}></span>
+        </Link>
+        <Link href="/#services" className="flex items-center gap-3">
+          <h4>03</h4>
+          <span className={` ease-linear duration-300 transition-all block min-h-0.5 rounded-md bg-white ${sectionVisible === "services" ? "min-w-8" : "min-w-0"}`}></span>
+        </Link>
+        <Link href="/#contact" className={`flex items-center gap-3 ${sectionVisible !== "contact" && "hidden"}`}>
+          <h4>04</h4>
+          <span className={` ease-linear duration-300 transition-all block min-h-0.5 rounded-md bg-white ${sectionVisible === "contact" ? "min-w-8" : "min-w-0"}`}></span>
+        </Link>
       </ul>
     </motion.aside>
   );
