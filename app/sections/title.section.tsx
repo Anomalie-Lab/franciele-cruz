@@ -1,3 +1,4 @@
+"use client"
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 export function TitleSection({ number, title, color, bg, id }: { id: string; number: string; title: string; color: string; bg: string }) {
