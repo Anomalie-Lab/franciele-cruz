@@ -29,7 +29,7 @@ export function TrackSection() {
 
   return (
     <section className="py-32 pl-52 bg-white text-black section" data-section="track">
-      <TitleSection number="02" title="Especialidades" bg="bg-black" color="text-black" />
+      <TitleSection id="track" number="02" title="Especialidades" bg="bg-black" color="text-black" />
       <div>
         <div className="flex gap-8">
           <Image className="dark:invert" src={imageCarousel} alt="Next.js logo" width={454.1} height={460.06} priority />

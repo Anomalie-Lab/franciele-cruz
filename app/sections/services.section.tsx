@@ -5,8 +5,8 @@ import { TitleSection } from "./title.section";
 
 export function ServicesSection() {
   return (
-    <section className="bg-white py-32 section pl-52" data-section="services">
-      <TitleSection number="01" title="Servicos" bg="bg-black" color="text-black" />
+    <section  className="bg-white py-32 section pl-52" data-section="services">
+      <TitleSection id="services" number="01" title="Servicos" bg="bg-black" color="text-black" />
       <div className="">
         <div>
           <h1 className="text-6xl font-black w-2/5 text-left text-black">Apoio Jurídico Personalizado.</h1>

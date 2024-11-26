@@ -10,7 +10,7 @@ import { IoIosArrowForward } from "react-icons/io";
 export function SkillsSection() {
   return (
     <section className="bg-[url('/still-life-with-scales-justice.png')] py-32 bg-cover bg-top section pl-52 text-white" data-section="skills">
-      <TitleSection number="02" title="Especialidades" bg="bg-white" color="text-white" />
+      <TitleSection id="skills" number="02" title="Especialidades" bg="bg-white" color="text-white" />
       <div>
         <div>
           <h1 className="text-6xl font-black w-2/5 text-left">Áreas de atuação.</h1>
