@@ -5,7 +5,6 @@ import { Navbar } from "@/components/navbar/navbar.component";
 import { Providers } from "./providers/providers";
 import "@splidejs/react-splide/css";
 import Head from "next/head";
-import { Html } from "next/document";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +20,7 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <Html lang="pt-BR" suppressHydrationWarning>
+    <html lang="pt-BR" suppressHydrationWarning>
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -50,6 +49,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <Navbar />
         </body>
       </Providers>
-    </Html>
+    </html>
   );
 }
