@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export function FooterSection() {
   return (
-    <footer className="bg-black pt-[500px] h-96 flex flex-col">
+    <footer className="bg-black h-1/2 pt-[500px] flex flex-col">
       <div className="flex justify-around pt-20 pb-14 border-b border-white border-opacity-5 mx-20">
         <div className="flex flex-col bg-black p-0 m-0">
           <h1 className="text-[40px] text-accentSecondary font-bold font-playfair flex flex-col items-end">

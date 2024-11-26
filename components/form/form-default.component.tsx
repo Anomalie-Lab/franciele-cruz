@@ -40,7 +40,7 @@ export const FormDefaultComponent = () => {
 
   return (
     <>
-      <form className="h-auto w-1/2 p-0" onSubmit={handleSubmit(onSubmit)}>
+      <form className="h-auto p-0 w-1/2 max-md:w-full " onSubmit={handleSubmit(onSubmit)}>
         <div className="flex space-x-4 mb-4">
           <div className="w-1/2">
             <label className="block text-white mb-2 font-base" htmlFor="nome">
@@ -58,13 +58,13 @@ export const FormDefaultComponent = () => {
           </div>
         </div>
 
-        <div className="mb-4 mt-8">
+        {/* <div className="mb-4 mt-8">
           <label className="block text-white mb-2 font-base" htmlFor="mensagem">
             Mensagem
           </label>
           <textarea id="mensagem" className="w-full border border-white p-3 bg-transparent placeholder-white text-sm" rows={4} placeholder="Adicione sua mensagem aqui." {...register("message")} />
           <span>{formState?.errors?.message?.message}</span>
-        </div>
+        </div> */}
 
         <div className="flex justify-between items-center mt-14">
           <div className="text-white rounded-full border border-white bg-transparent h-16 w-16 flex items-center justify-center">

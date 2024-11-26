@@ -1,6 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState, useCallback, useEffect } from "react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { IoIosArrowForward } from "react-icons/io";
 
 export const CarouselDefaultComponent = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -57,7 +59,7 @@ export const CarouselDefaultComponent = () => {
 
   return (
     <div
-      className="max-w-3xl relative outline-none"
+      className="max-w-3xl relative outline-none max-md:w-full"
       onKeyDown={(e) => {
         if (e.key === "ArrowRight") handleNext();
         if (e.key === "ArrowLeft") handlePrevious();
@@ -68,7 +70,7 @@ export const CarouselDefaultComponent = () => {
         <div className={`flex transition-transform duration-500 ease-in-out gap-16`} style={{ transform: `translateX(-${currentIndex * 50}%)` }}>
           {items.map((item) => (
             <div key={item.id} className="w-80 flex-shrink-0">
-              <div className="overflow-hidden h-full transform hover:scale-[1.02] transition-transform duration-300">
+              <div className="overflow-hidden h-full transform transition-transform duration-300">
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src={item.image}
@@ -84,7 +86,7 @@ export const CarouselDefaultComponent = () => {
                 </div>
                 <div className="mt-4">
                   <h3 className="text-xl text-black font-black mb-2 text-justify">{item.title}</h3>
-                  <p className="opacity-60 text-black font-base text-justify mt-4">{item.description}</p>
+                  <p className="opacity-70 text-black font-base text-justify mt-4">{item.description}</p>
                 </div>
               </div>
             </div>
@@ -92,14 +94,23 @@ export const CarouselDefaultComponent = () => {
         </div>
       </div>
 
-      <div className="mt-16 flex space-x-4">
-        <button onClick={handlePrevious} disabled={currentIndex === 0} aria-label="Previous slides" className={`p-3 rounded-full ${currentIndex === 0 ? "bg-accentSecondary cursor-not-allowed" : "bg-black hover:bg-black"} text-white transition-all duration-300 focus:outline-none shadow-lg`}>
-          <FiChevronLeft className="w-6 h-6" />
-        </button>
+      <div className="mt-16 flex space-x-4 justify-between items-center w-full">
+        <div className="gap-3 flex">
+          <button onClick={handlePrevious} disabled={currentIndex === 0} aria-label="Previous slides" className={`p-3 rounded-full ${currentIndex === 0 ? "bg-accentSecondary cursor-not-allowed" : "bg-black hover:bg-black"} text-white transition-all duration-300 focus:outline-none shadow-lg`}>
+            <FiChevronLeft className="w-6 h-6" />
+          </button>
 
-        <button onClick={handleNext} disabled={currentIndex >= items.length - 2} aria-label="Next slides" className={`p-3 rounded-full ${currentIndex >= items.length - 2 ? "bg-accentSecondary cursor-not-allowed" : "bg-black hover:bg-black"} text-white transition-all duration-300 focus:outline-none shadow-lg`}>
-          <FiChevronRight className="w-6 h-6" />
-        </button>
+          <button onClick={handleNext} disabled={currentIndex >= items.length - 2} aria-label="Next slides" className={`p-3 rounded-full ${currentIndex >= items.length - 2 ? "bg-accentSecondary cursor-not-allowed" : "bg-black hover:bg-black"} text-white transition-all duration-300 focus:outline-none shadow-lg`}>
+            <FiChevronRight className="w-6 h-6" />
+          </button>
+        </div>
+          <div className="font-semibold text-lg cta hover-effect">
+                <Link href="/areas" className="border-none bg-none cursor-pointer">
+                  <span className=" text-black hover-underline-animation relative pb-2 tracking-widest flex gap-3 items-center font-base text-base max-md:text-xs">
+                    Veja Todos <IoIosArrowForward />
+                  </span>
+                </Link>
+          </div>
       </div>
     </div>
   );
