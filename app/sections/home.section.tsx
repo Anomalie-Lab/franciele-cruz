@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { motion, useInView } from "framer-motion";
+import { FaWhatsapp } from "react-icons/fa";
 import { useRef } from "react";
 
 export function HomeSection() {
@@ -11,21 +12,25 @@ export function HomeSection() {
   const isInView2 = useInView(ref2);
 
   return (
-    <main className="bg-[url('/greek-busts-standing-line.png')] bg-cover bg-center  w-screen h-screen relative pr-80 overflow-hidden section max-[1024px]:pr-0 max-md:h-[84vh]" data-section="home">
-      <div className="z-10 flex items-end w-full h-full mt-12 relative max-md:mt-0">
-        <motion.figure ref={ref1} initial={{ opacity: 0, x: -150, y: 0 }} animate={isInView1 ? { opacity: 1, x: 0 } : { opacity: 0, x: -150, y: 0 }} transition={{ duration: 0.5 }}>
-          <Image alt="franciele-cruz poster" src="/franciele-home.svg" width={0} height={0} className="w-fit min-h-[700px] h-[65vw] max-h-[1000px] max-md:hidden" />
-        </motion.figure>
-        <motion.figure ref={ref2} initial={{ opacity: 0 }} animate={isInView2 ? { opacity: 1 } : { opacity: 0 }} transition={{ duration: 0.5 }}>
-          <Image alt="franciele-cruz poster" src="/franciele-home2.svg" width={0} height={0} className="hidden max-md:block w-fit min-h-[700px] min-w-[490px] h-[65vw] max-h-[1000px] max-md:w-full -bottom-7 max-md:absolute " />
-        </motion.figure>
-        <div className="flex flex-col items-end gap-10 h-fit absolute right-60 top-24 max-md:right-5  max-[750px]:-translate-y-1/3 max-[750px]:top-1/3 max-[400px]:right-3">
-          <h1 className="text-[160px] max-[1024px]:text-8xl max-[500px]:text-7xl text-accentSecondary font-bold font-playfair flex flex-col items-end">
-            <span>Franciele</span> <span className="-mt-24 max-[1024px]:mt-0">Cruz</span>
-          </h1>
-          <h2 className="text-7xl max-[1024px]:text-5xl max-[500px]:text-4xl font-sacramento text-white relative bottom-16">Advogada</h2>
+    <main className="grid grid-cols-2 h-screen bg-cover bg-top section text-white bg-blue-600" data-section="home">
+        <div className="flex justify-center	items-center bg-blue-500 bg-cover bg-center p-4 bg-[url('/greek-busts-standing-line.png')]">
+          <div className="flex flex-col gap-6">
+            <div>
+              <h3 className="font-sacramento text-7xl text-accentSecondary">Advogada</h3>
+              <h1 className="text-7xl font-playfair">Franciele Cruz</h1>
+            </div>
+            <p className="w-[490px] text-justify font-semibold">Se você busca uma profissional comprometida e com experiência, estou à disposição para ajudar. Entre em contato comigo e receba o suporte jurídico que você precisa!</p>
+            <div className="flex gap-3">
+              <div className="bg-accentSecondary rounded-full h-3 w-3"></div>
+              <div className="bg-white opacity-40 rounded-full h-3 w-3"></div>
+            </div>
+            <button className="border mt-8 w-60 h-14 p-4 flex items-center justify-around hover:bg-accentSecondary hover:border-none">
+              <FaWhatsapp size={28}/>
+              <p className="font-playfair font-medium">Marcar consulta</p>
+            </button>
+          </div>
         </div>
-      </div>
+        <div className="bg-green-500 bg-cover bg-center p-4 bg-[url('/FotoBusto.WEBP')]"></div>
     </main>
   );
 }
