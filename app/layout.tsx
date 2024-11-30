@@ -5,6 +5,8 @@ import { Navbar } from "@/components/navbar/navbar.component";
 import { Providers } from "./providers/providers";
 import "@splidejs/react-splide/css";
 import Head from "next/head";
+import { NavbarMobile } from "@/components/navbar/navbar-mobile.component";
+import { BackToTop } from "@/components/back-top/back-top.componet";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -47,6 +49,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <body className={`${inter.className} antialiased`}>
           {children}
           <Navbar />
+          <NavbarMobile />
+          <BackToTop />
         </body>
       </Providers>
     </html>

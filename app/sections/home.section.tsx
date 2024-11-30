@@ -1,35 +1,15 @@
 "use client";
-import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 
 export function HomeSection() {
   const ref1 = useRef(null);
   const isInView1 = useInView(ref1);
 
-  const ref2 = useRef(null);
-  const isInView2 = useInView(ref2);
-
-  const [textHome, setTextHome] = useState<string>("Advogada. Desde 2018, busco oferecer soluções jurídicas rápidas e eficazes, com empatia e transparência. Para mim, o Direito é sobre entender cada história e resolver com humanidade.");
-  const [btnColor, setBtnColor] = useState("bg-accentSecondary");
-  const [btnColor2, setBtnColor2] = useState("bg-gray-400");
-
-  const handleNext = (text: string, btnNum: number) => {
-    setTextHome(text);
-
-    if (btnNum === 1) {
-      setBtnColor("bg-accentSecondary");
-      setBtnColor2("bg-gray-400");
-    } else if (btnNum === 2) {
-      setBtnColor("bg-gray-400");
-      setBtnColor2("bg-accentSecondary");
-    }
-  };
-
   return (
-    <main className="absolute w-full grid grid-cols-2 max-md:grid-cols-1 h-screen bg-cover bg-top section text-white max-md:h-screen z-50 overflow-hidden" data-section="home">
+    <main className="absolute w-full grid grid-cols-2 max-md:grid-cols-1 h-screen bg-cover bg-top section text-white max-md:h-screen z-40 overflow-hidden" data-section="home">
       <div className="flex justify-center	items-center bg-cover bg-center p-4 bg-[url('/greek-busts-standing-line.png')]">
         <motion.div className="flex flex-col gap-6" ref={ref1} initial={{ opacity: 0, x: -150 }} animate={isInView1 ? { opacity: 1, x: 0 } : { opacity: 0, x: -150 }} transition={{ duration: 0.5, delay: 0.2 }}>
           <h3 className="font-sacramento text-7xl text-accentSecondary max-md:text-5xl">Advogada</h3>

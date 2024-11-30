@@ -12,7 +12,7 @@ export function SkillsSection() {
   const ref = useRef(null);
   const isInView = useInView(ref);
   return (
-    <section className="bg-[url('/still-life-with-scales-justice.png')] py-32 bg-cover bg-top section pl-52 text-white max-[1450px]:pl-4 px-4" data-section="skills">
+    <section className="bg-[url('/still-life-with-scales-justice.png')] pb-32 bg-cover bg-top section pl-52 text-white max-[1450px]:pl-4 px-4" data-section="skills">
       <TitleSection id="skills" number="02" title="Especialidades" bg="bg-white" color="text-white" />
       <motion.div ref={ref} initial={{ opacity: 0, x: 150 }} animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 150 }} transition={{ duration: 0.5, delay: 0.5 }}>
         <div>

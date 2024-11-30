@@ -52,3 +52,15 @@ body {
   transform: translate3d(0, 0, 0) !important;
   padding-left: var(--slide-spacing);
 }
+
+.line-top-bottom {
+  stroke-dasharray: 12 63;
+}
+.menu-button input:checked + svg {
+  transform: rotate(-45deg);
+}
+
+.menu-button input:checked + svg .line-top-bottom {
+  stroke-dasharray: 20 300;
+  stroke-dashoffset: -32.42;
+}

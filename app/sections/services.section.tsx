@@ -12,7 +12,7 @@ export function ServicesSection() {
   const isInView2 = useInView(ref2);
 
   return (
-    <section className="bg-white section py-32 h-full pl-52 text-white max-[1450px]:pl-4 px-4" data-section="services">
+    <section className="bg-white section pb-32 h-full pl-52 text-white max-[1450px]:pl-4 px-4" data-section="services">
       <TitleSection id="services" number="03" title="Serviços" bg="bg-black" color="text-black" />
       <div className="">
         <motion.div ref={ref1} initial={{ opacity: 0, x: 150 }} animate={isInView1 ? { opacity: 1, x: 0 } : { opacity: 0, x: 150 }} transition={{ duration: 0.5, delay: 0.2 }} className="flex gap-8 max-md:flex-col">
