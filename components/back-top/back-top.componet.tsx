@@ -31,8 +31,8 @@ export const BackToTop = () => {
   return (
     <>
       {isVisible && (
-        <button onClick={irParaOTopo} className="fixed right-5 bottom-5 border-custom-accentColor shadow-md bg-accentSecondary rounded-full flex items-center justify-center w-7 h-7 text-2xl text-custom-accentColor duration-300">
-          <span className="back-to-top">
+        <button onClick={irParaOTopo} className="hidden max-lg:flex fixed right-5 bottom-5 border-custom-accentColor shadow-md bg-accentSecondary rounded-full items-center justify-center w-7 h-7 text-2xl text-custom-accentColor duration-300">
+          <span className="back-to-top text-white">
             <TbArrowUp />
           </span>
         </button>
