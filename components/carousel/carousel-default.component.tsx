@@ -59,7 +59,7 @@ export const CarouselDefaultComponent = () => {
 
   return (
     <div
-      className="max-w-3xl relative outline-none max-md:w-full"
+      className="max-w-3xl relative outline-none max-md:w-86"
       onKeyDown={(e) => {
         if (e.key === "ArrowRight") handleNext();
         if (e.key === "ArrowLeft") handlePrevious();
@@ -105,7 +105,7 @@ export const CarouselDefaultComponent = () => {
           </button>
         </div>
           <div className="font-semibold text-lg cta hover-effect">
-                <Link href="/areas" className="border-none bg-none cursor-pointer">
+                <Link href="/areas/page" className="border-none bg-none cursor-pointer">
                   <span className=" text-black hover-underline-animation relative pb-2 tracking-widest flex gap-3 items-center font-base text-base max-md:text-xs">
                     Veja Todos <IoIosArrowForward />
                   </span>
