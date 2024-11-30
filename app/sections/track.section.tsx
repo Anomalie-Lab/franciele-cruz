@@ -33,7 +33,7 @@ export function TrackSection() {
   const ref2 = useRef(null);
   const isInView2 = useInView(ref2);
   return (
-    <section className=" py-32 bg-cover bg-top section pl-52  max-[1450px]:pl-4 px-4 bg-white text-black section" data-section="track">
+    <section className="mt-[100vh] py-32 bg-cover bg-top section pl-52  max-[1450px]:pl-4 px-4 bg-white text-black section" data-section="track">
       <TitleSection id="track" number="01" title="Trajetória" bg="bg-black" color="text-black" />
       <div>
         <motion.div ref={ref1} initial={{ opacity: 0, x: 150 }} animate={isInView1 ? { opacity: 1, x: 0 } : { opacity: 0, x: 150 }} transition={{ duration: 0.5, delay: 0.2 }} className="flex gap-8 max-md:flex-col">
