@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
-import { useRef, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import { TitleSection } from "./title.section";
 import { motion, useInView } from "framer-motion";
 export function TrackSection() {
-  const [imageCarousel, setImageCarousel] = useState("/fotoBusto.webp");
+  const [imageCarousel, setImageCarousel] = useState("/fotoLevantada.webp");
   const [btnCarouselColor1, setBtnCarouselColor1] = useState("bg-black");
   const [btnCarouselColor2, setBtnCarouselColor2] = useState("bg-gray-400");
   const [btnCarouselColor3, setBtnCarouselColor3] = useState("bg-gray-400");
