@@ -7,7 +7,7 @@ import { LocationSection } from "./sections/location.section";
 import { FooterSection } from "./sections/footer.section";
 export default function Home() {
   return (
-    <>
+    <div className="overflow-x-hidden w-screen">
       <HomeSection />
       <TrackSection />
       <SkillsSection />
@@ -15,6 +15,6 @@ export default function Home() {
       <ContactSection />
       <LocationSection />
       <FooterSection />
-    </>
+    </div>
   );
 }
