@@ -4,7 +4,7 @@ import { useRef, useEffect, useState } from "react";
 import { TitleSection } from "./title.section";
 import { motion, useInView } from "framer-motion";
 export function TrackSection() {
-  const [imageCarousel, setImageCarousel] = useState("/FotoLevantada.png");
+  const [imageCarousel, setImageCarousel] = useState("/FotoSofa.png");
   const [btnCarouselColor1, setBtnCarouselColor1] = useState("bg-black");
   const [btnCarouselColor2, setBtnCarouselColor2] = useState("bg-gray-400");
   const [btnCarouselColor3, setBtnCarouselColor3] = useState("bg-gray-400");
