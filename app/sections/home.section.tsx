@@ -3,6 +3,7 @@ import { motion, useInView } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
 import { useRef } from "react";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
+import Link from "next/link";
 
 export function HomeSection() {
   const ref1 = useRef(null);
@@ -30,7 +31,8 @@ export function HomeSection() {
               </div>
             </div>
           </Splide>
-          <button
+          <Link
+            href="https://wa.link/iahv2w"
             className="mt-12 w-60 h-14 text-red hover:before:bg-red 
             relative overflow-hidden border hover:shadow-black border-white bg-transparent px-3 text-w shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-accentSecondary before:transition-all before:duration-500 hover:text-white hover:accentSecondary 
             hover:before:left-0 hover:before:w-full max-md:h-14 max-md:w-52"
@@ -39,7 +41,7 @@ export function HomeSection() {
               <FaWhatsapp size={28} className="max-md:size-6" />
               <p className="font-playfair p-3 font-medium max-md:text-sm">Marcar consulta</p>
             </span>
-          </button>
+          </Link>
         </motion.div>
       </div>
       <div className="bg-cover bg-center p-4 bg-[url('/FotoBusto.WEBP')] max-md:hidden"></div>
