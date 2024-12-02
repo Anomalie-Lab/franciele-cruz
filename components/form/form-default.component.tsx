@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import axios from "axios";
+import Link from "next/link";
 interface InputsFormContactI {
   name: string;
   email: string;
@@ -67,9 +68,9 @@ export const FormDefaultComponent = () => {
         </div> */}
 
         <div className="flex justify-between items-center mt-14">
-          <div className="text-white rounded-full border-2 border-white bg-transparent h-16 w-16 flex items-center justify-center">
+          <Link target="_blank" href="https://wa.link/iahv2w" className="text-white rounded-full border-2 border-white bg-transparent h-16 w-16 flex items-center justify-center">
             <IoLogoWhatsapp size={30} />
-          </div>
+          </Link>
           <button type="submit" className="border border-white text-white p-2 hover:bg-white hover:text-black transition w-56 h-12 flex items-center justify-around">
             <p className="text-sm font-base">Agende sua consulta</p>
             <FiChevronRight className="w-6 h-6" />

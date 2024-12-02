@@ -74,10 +74,10 @@ export function NavbarMobile() {
             </menu>
           </DrawerBody>
           <DrawerFooter className="w-full flex justify-center items-center gap-12 text-lg">
-            <Link href="#" className="opacity-50 hover:opacity-100 hover-effect">
+            <Link target="_blank" href="https://wa.link/iahv2w" className="opacity-50 hover:opacity-100 hover-effect">
               WhatsApp
             </Link>
-            <Link href="#" className="opacity-50 hover:opacity-100 hover-effect">
+            <Link target="_blank" href="https://maps.app.goo.gl/Kt5pZa14mq9NTyai8" className="opacity-50 hover:opacity-100 hover-effect">
               Maps
             </Link>
           </DrawerFooter>
