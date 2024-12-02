@@ -37,16 +37,16 @@ export function TrackSection() {
       <TitleSection id="track" number="01" title="Trajetória" bg="bg-black" color="text-black" />
       <div>
         <motion.div ref={ref1} initial={{ opacity: 0, x: 150 }} animate={isInView1 ? { opacity: 1, x: 0 } : { opacity: 0, x: 150 }} transition={{ duration: 0.5, delay: 0.2 }} className="flex gap-8 max-md:flex-col">
-          <Image className="dark:invert" src={imageCarousel} alt="Next.js logo" width={454.1} height={460.06} priority />
+          <Image className="" src={imageCarousel} alt="Next.js logo" width={454.1} height={460.06} priority />
           <div className="">
             <div className="flex flex-col max-md:flex-row gap-2 align-bottom justify-end max-md:justify-start h-full">
-              <button onClick={() => handleClick("/fotoSofa.webp", 1)}>
+              <button onClick={() => handleClick("/FotoSofa.png", 1)}>
                 <div className={`h-2 w-2 ${btnCarouselColor1} rounded`}></div>
               </button>
-              <button onClick={() => handleClick("/fotoLevantada.webp", 2)}>
+              <button onClick={() => handleClick("/FotoLevantada.png", 2)}>
                 <div className={`h-2 w-2 ${btnCarouselColor2} rounded`}></div>
               </button>
-              <button onClick={() => handleClick("/fotoBusto.webp", 3)}>
+              <button onClick={() => handleClick("/FotoBusto.png", 3)}>
                 <div className={`h-2 w-2 ${btnCarouselColor3} rounded`}></div>
               </button>
             </div>
