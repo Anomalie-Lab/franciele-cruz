@@ -55,7 +55,7 @@ export function Navbar() {
             <span className="hover-underline-animation relative pb-2 tracking-widest">Contato</span>
           </Link>
         </li>
-        <li className={`font-light text-lg cta hover-effect ${sectionVisible === "contact" ? "active" : ""}`}>
+        <li className={`font-light text-lg cta hover-effect`}>
           <Link target="_blank" href="https://wa.link/iahv2w" className="border-none bg-none cursor-pointer">
             <span className="hover-underline-animation relative pb-2 tracking-widest">WhatsApp</span>
           </Link>
