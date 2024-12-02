@@ -42,7 +42,7 @@ export function HomeSection() {
           </button>
         </motion.div>
       </div>
-      <div className="bg-cover bg-center p-4 bg-[url('/FotoBusto.WEBP')] max-md:hidden"></div>
+      <div className="bg-cover bg-center p-4 bg-[url('/FotoBusto.png')] max-md:hidden"></div>
     </main>
   );
 }
