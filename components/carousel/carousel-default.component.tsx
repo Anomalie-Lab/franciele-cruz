@@ -105,7 +105,7 @@ export const CarouselDefaultComponent = () => {
           </button>
         </div>
           <div className="font-semibold text-lg cta hover-effect">
-                <Link href="/areas/page" className="border-none bg-none cursor-pointer">
+                <Link href="/support" className="border-none bg-none cursor-pointer">
                   <span className=" text-black hover-underline-animation relative pb-2 tracking-widest flex gap-3 items-center font-base text-base max-md:text-xs">
                     Veja Todos <IoIosArrowForward />
                   </span>
