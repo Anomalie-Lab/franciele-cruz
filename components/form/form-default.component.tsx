@@ -68,12 +68,20 @@ export const FormDefaultComponent = () => {
         </div> */}
 
         <div className="flex justify-between items-center mt-14">
-          <div className="text-white rounded-full border-2 border-white bg-transparent h-16 w-16 flex items-center justify-center">
+        <Link
+            target="_black"
+            href="https://wa.link/iahv2w"
+            className="text-white rounded-full border-2 border-white bg-transparent h-16 w-16 flex items-center justify-center hover:bg-accentSecondary"
+          >
             <IoLogoWhatsapp size={30} />
-          </div>
-          <button type="submit" className="border border-white text-white p-2 hover:bg-white hover:text-black transition w-56 h-12 flex items-center justify-around">
-            <p className="text-sm font-base">Agende sua consulta</p>
-            <FiChevronRight className="w-6 h-6" />
+        </Link>
+          <button type="submit" className="w-60 h-14 text-red hover:before:bg-red 
+            relative overflow-hidden border hover:shadow-black border-white bg-transparent px-3 text-w shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-accentSecondary before:transition-all before:duration-500 hover:text-white hover:accentSecondary 
+            hover:before:left-0 hover:before:w-full max-md:h-12 max-md:w-52 flex items-center justify-around">
+            <span className="relative z-10 flex items-center justify-around gap-4">
+              <p className="text-sm font-base">Agende sua consulta</p>
+              <FiChevronRight className="w-6 h-6" />
+            </span>
           </button>
         </div>
       </form>

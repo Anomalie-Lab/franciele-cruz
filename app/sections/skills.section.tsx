@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { TitleSection } from "./title.section";
-import { FaBalanceScale, FaBusinessTime, FaPeopleArrows, FaUserShield } from "react-icons/fa";
+import { FaArrowAltCircleRight, FaBalanceScale, FaBusinessTime, FaPeopleArrows, FaUserShield } from "react-icons/fa";
 import { FaBuildingShield, FaPeopleRoof } from "react-icons/fa6";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import Link from "next/link";
@@ -58,8 +58,12 @@ export function SkillsSection() {
             </SplideTrack>
             <div className="flex justify-between items-center absolute -bottom-20 w-full">
               <div className="splide__arrows relative flex gap-4">
-                <button className="splide__arrow--prev w-3 h-3 bg-white/50 rounded-full"></button>
-                <button className="splide__arrow--next w-3 h-3 bg-white/50 rounded-full"></button>
+                <button className="splide__arrow--prev">
+                  <FaArrowAltCircleRight size={25} className="active:text-accentSecondary"/>
+                </button>
+                <button className="splide__arrow--next">
+                  <FaArrowAltCircleRight size={25} className="active:text-accentSecondary"/>
+                </button>
               </div>
               <div className="font-semibold text-lg cta hover-effect">
                 <Link href="/areas" className="border-none bg-none cursor-pointer">
