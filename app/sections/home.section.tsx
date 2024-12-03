@@ -32,6 +32,7 @@ export function HomeSection() {
             </div>
           </Splide>
           <Link
+            target="_black"
             href="https://wa.link/iahv2w"
             className="mt-12 w-60 h-14 text-red hover:before:bg-red 
             relative overflow-hidden border hover:shadow-black border-white bg-transparent px-3 text-w shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-accentSecondary before:transition-all before:duration-500 hover:text-white hover:accentSecondary 
@@ -44,7 +45,7 @@ export function HomeSection() {
           </Link>
         </motion.div>
       </div>
-      <div className="bg-cover bg-center p-4 bg-[url('/FotoBusto.WEBP')] max-md:hidden"></div>
+      <div className="bg-cover bg-center p-4 bg-[url('/FotoBusto.png')] max-md:hidden"></div>
     </main>
   );
 }
